@@ -8,11 +8,11 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 
 # Importing the dataset
-dataset_train = pd.read_csv('./avila/avila-tr.csv', header = None)
+dataset_train = pd.read_csv('./Datasets/avila/avila-tr.csv', header = None)
 X_train = dataset_train.iloc[:, 0:10].values
 y_train = dataset_train.iloc[:, 10].values
 
-dataset_test = pd.read_csv('./avila/avila-ts.csv', header = None)
+dataset_test = pd.read_csv('./Datasets/avila/avila-ts.csv', header = None)
 X_test = dataset_test.iloc[:, 0:10].values
 y_test = dataset_test.iloc[:, 10].values
 

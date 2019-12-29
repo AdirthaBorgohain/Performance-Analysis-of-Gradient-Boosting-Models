@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 
 # Importing the dataset
-dataset = pd.read_csv('posture.csv', header = None)
+dataset = pd.read_csv('./Datasets/posture.csv', header = None)
 X = dataset.iloc[:, 0:42].values
 y = dataset.iloc[:, 42].values
 

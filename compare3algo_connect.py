@@ -9,7 +9,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.preprocessing import LabelEncoder
 
 # Importing the dataset
-dataset = pd.read_csv('connect-4.csv', header = None)
+dataset = pd.read_csv('./Datasets/connect-4.csv', header = None)
 labelencoder_X = LabelEncoder()
 dataset = dataset.apply(labelencoder_X.fit_transform)
 X = dataset.iloc[:, 0:42].values

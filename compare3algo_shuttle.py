@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 
 # Importing the dataset
-dataset = pd.read_csv('shuttle.csv', header=None)
+dataset = pd.read_csv('./Datasets/shuttle.csv', header=None)
 X = dataset.iloc[:, 0:9].values
 y = dataset.iloc[:, 9].values
 
